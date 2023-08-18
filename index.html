@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</head>
+<body>
+    
+    <div class="container">
+        <header>captcha generate</header>
+        <div class="input-field captch-box">
+            <input type="text" value="" style="text-transform: lowercase;" disabled>
+            <i class='bx bx-loader-alt'></i>
+        </div>
+        <div class="input-field captch-input">
+            <input type="text" style="text-transform: lowercase;">
+        </div>
+        <div class="message"></div>
+        <button class="disabled">submit captcha</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

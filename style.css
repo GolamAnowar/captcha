@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    transition: all .5s linear;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background : linear-gradient(to right top, #ff0080, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 370px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.container header{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.container .input-field{
+    border: .1rem solid #d1d1d1;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.container .input-field input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    background: inherit;
+}
+.container .captch-box{
+    background: #eee;
+    border: none;
+}
+.container .captch-box input{
+    font-size: 2rem;
+}
+.container .captch-box i{
+    font-size: 2rem;
+    padding: 2rem 1.5rem;
+    background: #ff0080;
+    color: #fff;
+    cursor: pointer;
+}
+.container button{
+    width: 100%;
+    background: #ff0080;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.container .message{
+    font-size: 1.5rem;
+    color: #ff0080;
+    margin-bottom: -1rem;
+    display: none;
+}
+.container .message.active{
+    display: block
+}
+.container button.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
